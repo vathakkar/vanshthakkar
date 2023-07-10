@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+/*<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -11,4 +11,246 @@
   <body>
     <p>If you are not redirected, <a href="https://www.linkedin.com/in/vanshthakkar/">click here</a>.</p>
   </body>
+</html>*/
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vansh Thakkar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      background-color: #000000;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #header h1 {
+      font-size: 45px;
+      margin: 0;
+    }
+
+    #header ul {
+      list-style-type: none;
+      margin: 10px 0 0 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    #header ul li {
+      margin-right: 10px;
+    }
+
+    #header ul li a {
+      text-decoration: none;
+      color: #FFFFFF;
+      opacity: 0.8;
+    }
+
+    #header ul li:not(:last-child)::after {
+      content: "|";
+      margin-left: 10px;
+      opacity: 0.6;
+    }
+
+    #header ul li a:hover {
+      opacity: 1;
+    }
+
+    #content {
+      display: flex;
+      flex-direction: row;
+      background-color: #F5F5F5;
+      padding: 50px;
+    }
+
+    #left-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    #left-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Add circular border radius */
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #left-section .university img {
+    width: 80px;
+    height: 60px;
+    margin-right: 20px;
+    object-fit: fill;
+    border-radius: 0; /* Remove circular border radius */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    #left-section .university {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+
+    #right-section {
+      flex: 2;
+      padding-left: 50px;
+      max-height: 100vh;
+      overflow-y: auto;
+    }
+
+    #right-section h1 {
+      margin-top: 0;
+    }
+
+    .company {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .company img {
+      width: 65px;
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    .company h2 {
+      margin: 0;
+    }
+
+    .company .date {
+      margin-left: 10px;
+      opacity: 0.6;
+      font-size: 14px;
+    }
+
+    .company p {
+      margin: 0;
+      opacity: 0.8;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .company ul {
+      padding-left: 20px;
+    }
+
+    .company ul li {
+      list-style-type: disc;
+      margin-bottom: 10px;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .company ul li:before {
+      content: "\2022";
+      color: #000000;
+      font-size: 12px;
+      margin-right: 8px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      #content {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      #left-section {
+        margin-bottom: 20px;
+      }
+
+      #right-section {
+        padding-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Vansh Thakkar</h1>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/vanshthakkar" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.github.com/your-github-profile" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <div id="left-section">
+      <img src="your-picture.jpg.jfif" alt="Vansh Thakkar">
+      <div class="university">
+        <img src="purdue-logo.jpg" alt="Purdue University Logo">
+        <p><b>B.S Industrial Engineering </b>
+            <br>
+            Purdue University, West Lafayette
+            <br> 
+            <b>May 2024</b></p>
+      </div>
+    </div>
+
+    <div id="right-section">
+
+      <h1>Work Experience</h1>
+
+      <div class="company">
+        <img src="microsoft.jpg" alt="Microsoft Logo">
+        <div>
+          <h2>Microsoft Corporation <span class="date">(May 2023 – Aug 2023)</span></h2>
+          <p>
+            <b>Technical Program Management Intern </b><br>
+            • Developed a scalable and effective technical strategy to support the rhythm of the business and organizational goals.<br>
+            • Created and evaluated reports, dashboards, tabular models, and analytical insights to drive efficiency and business solutions.<br>
+            • Managed project implementation: resource allocation, progress tracking, change control, testing, documentation, and training 
+            of technical development and product planning teams.
+          </p>
+        </div>
+      </div>
+
+      <div class="company">
+        <img src="tesla.jpg" alt="Tesla Logo">
+        <div>
+          <h2>Tesla, Inc. <span class="date">(Jan 2023 – May 2023)</span></h2>
+          <p>
+            <b>Logistics Data Analyst Intern - Transportation</b><br>
+            • Developed 15+ reports and data visualizations for Key Production Indices (KPIs) to facilitate decision-making across the 
+            Service and Energy Logistics Team using SQL, Tableau, R, and Python, catering to both technical and non-technical audiences.<br>
+            • Collaborated with 15+ third-party carriers, including FTL, LTL, ocean, and rail, to optimize on-time performance and delivery 
+            standards while reporting current and accurate transit lead times to internal stakeholders.<br>
+            • Analyzed the transportation management system to identify process improvements, uncover inefficiencies, and reportthem to product management teams, while planning for immediate and long-term solutions and following up with stakeholders on timelines causing $200k+ in savings.<br>
+            • Partnered with stakeholders to automate manual workflows and drive efficiency and compliance in cost audits and material planning using Python and R reducing 15+ hours of manual work eachweek.
+          </p>
+        </div>
+      </div>
+
+      <div class="company">
+        <img src="penske.jpg" alt="Penske Logo">
+        <div>
+          <h2>Penske Logistics LLC – Starbucks RDC <span class="date">(Jun 2022 – Aug 2022)</span></h2>
+          <p>
+            <b>Logistics Engineering Intern - Warehousing</b><br>
+            • Learned the 3PL warehousing processes: receiving, inventory management, allocation, picking, loading.<br>
+            • Reduced average time to pick an order by 12%, saving $360k per annum by strategically re-slotting over 1500 SKU’s analyzing 
+            different attributes like dimensions, weight, demand, hazmat status, etc.<br>
+            • Developed a dashboard to analyze and flag items that were likely to cause line-downs earlier in the day and suggested increase 
+            in the slots and re-plen frequency.<br>
+            • Drafted and implemented Standard Operating Procedures (SOPs) for inventory management processes.<br>
+            • Conducted Kaizen analysis, validated Value Stream Maps by conducting time-studies and identifying touch points.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
+
