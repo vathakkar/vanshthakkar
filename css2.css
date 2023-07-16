@@ -189,6 +189,12 @@ body {
   #footer li:last-child {
     margin-right: 0;
   }
+
+  #footer ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    opacity: 0.6;
+  }
   
   #footer a {
     text-decoration: none;
